@@ -1,0 +1,19 @@
+.footer {
+  @apply bg-beauty-dark py-8;
+}
+
+.footer-contact {
+  @apply mb-4 text-white;
+}
+
+.footer-socials {
+  @apply flex justify-center space-x-6 mb-4;
+}
+
+.footer-link {
+  @apply text-white hover:text-beauty-pink transition;
+}
+
+.footer-copyright {
+  @apply text-white text-sm;
+}

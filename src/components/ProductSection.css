@@ -1,0 +1,11 @@
+.product-section {
+  @apply py-16 bg-gradient-to-b from-white to-gray-100;
+}
+
+.product-title {
+  @apply text-3xl font-bold text-beauty-dark text-center mb-8;
+}
+
+.product-shelf {
+  @apply flex flex-col sm:flex-row sm:overflow-x-auto gap-6 pb-4;
+}

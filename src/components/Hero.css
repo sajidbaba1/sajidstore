@@ -1,0 +1,15 @@
+.hero {
+  @apply relative h-[40vh] w-full flex items-center justify-center bg-beauty-dark overflow-hidden;
+}
+
+.hero-bg {
+  @apply absolute inset-0 w-full h-full object-cover opacity-80;
+}
+
+.hero-overlay {
+  @apply absolute inset-0 bg-beauty-dark opacity-40;
+}
+
+.hero-logo {
+  @apply h-24 md:h-36 z-10;
+}

@@ -1,0 +1,26 @@
+
+
+.navbar.scrolled {
+  @apply shadow-lg bg-opacity-20;
+}
+
+.navbar-logo {
+  @apply h-12;
+}
+
+.nav-links {
+  @apply flex justify-center space-x-8;
+}
+
+.nav-link {
+  @apply text-white text-lg font-medium hover:text-beauty-pink transition-all duration-300 relative;
+}
+
+.nav-link::after {
+  content: '';
+  @apply absolute bottom-0 left-0 w-0 h-0.5 bg-beauty-pink transition-all duration-300;
+}
+
+.nav-link:hover::after {
+  @apply w-full;
+}

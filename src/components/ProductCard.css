@@ -1,0 +1,28 @@
+.product-card {
+  @apply flex flex-col items-center p-6 bg-white rounded-lg shadow-lg min-w-[250px] transition-all duration-300 hover:shadow-xl;
+}
+
+.card-shelf {
+  @apply relative w-full h-64 bg-gray-200 rounded-lg overflow-hidden border-4 border-beauty-dark;
+  background: linear-gradient(135deg, #d4a017 0%, #8b5a2b 100%); /* Wood-like gradient */
+}
+
+.card-image {
+  @apply w-full h-full object-contain p-4;
+}
+
+.card-title {
+  @apply text-xl font-semibold text-beauty-dark mt-4 mb-2;
+}
+
+.card-price {
+  @apply flex items-center space-x-3 mb-4;
+}
+
+.original-price {
+  @apply text-gray-500 line-through;
+}
+
+.discounted-price {
+  @apply text-beauty-pink font-bold text-lg;
+}

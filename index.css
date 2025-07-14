@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+
+@layer components {
+  .glass {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .buy-button {
+    @apply bg-beauty-yellow text-beauty-dark font-semibold py-3 px-6 rounded-lg hover:bg-beauty-pink transition transform hover:scale-105 animate-pulse-slow;
+  }
+}
+
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #F9FAFB;
+}
+
+@keyframes pulse-slow {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+  100% { transform: scale(1); }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 2s infinite;
+}
